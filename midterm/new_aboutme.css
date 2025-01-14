@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.about-section {
+    background-color: rgb(245, 172, 15);
+    text-align: center;  /* Center the text horizontally */
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: center;  /* Center the content horizontally */
+    align-items: center;  /* Center the content vertically */
+    height: 100px;  /* Optional: Ensure sufficient height for vertical centering */
+}
+
+.about-section .rgb {
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;  /* RGB at the bottom right */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;  /* Full width */
+}
+
+.my-class, .my-favorite, .my-moods, .fun-facts {
+    background-color: rgb(255, 242, 204);
+    padding: 20px;
+    text-align: left;  /* Align text to the left */
+    font-size: 20px;
+    border: 1px solid #ccc;
+    position: relative;  /* To position the RGB text */
+    flex: 1;  /* Ensure each box takes equal space */
+}
+
+.my-favorite .rgb, .fun-facts .rgb, .about-section .rgb {
+    font-size: 12px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;  /* Position RGB at the bottom right for these sections */
+}
+
+.my-class .rgb, .my-moods .rgb {
+    display: none;  /* Hide RGB in my-class and my-moods */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;  /* Full width */
+}
+
+.footer > div {
+    flex: 1;  /* Ensure all sections inside footer take equal space */
+}
+
+.footer .my-moods {
+    background-color: rgb(213, 232, 212);
+}
+
+.footer .fun-facts {
+    background-color: rgb(213, 232, 212);
+}
