@@ -1,0 +1,66 @@
+/* เปลี่ยนพื้นหลังของหน้าเป็นสี charcoal */
+body {
+    background-color: #666633; /* สีเทาเข้ม (charcoal) */
+    color: white; /* ข้อความทั้งหมดเป็นสีขาว */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* เปลี่ยนสีหัวเรื่องเป็นสีฟ้า */
+h1 {
+    color: #1E90FF; /* สีฟ้า */
+    font-size: 45px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #1E90FF; /* สีฟ้า */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* เปลี่ยนสีข้อความปกติเป็นสีขาว */
+p {
+    color: white; /* ข้อความปกติเป็นสีขาว */
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* เปลี่ยนสีข้อความที่ต้องการเป็นสีเหลือง */
+span {
+    color: #FFFF00; /* สีเหลือง */
+    font-weight: bold; /* ทำให้ข้อความเป็นตัวหนา */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4a4a32; /* สีพื้นหลังใกล้เคียงกับตัวอย่าง */
+    margin: 0;
+    padding: 0;
+}
+
+.moods-section {
+    text-align: center;
+    color: #1e90ff; /* สีฟ้าของหัวข้อ */
+    margin: 20px;
+}
+
+.mood {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.mood img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.mood p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: white; /* สีข้อความ */
+}
