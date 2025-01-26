@@ -2,69 +2,235 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Hub</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>ชมรมหมากรุก</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        .navbar {
+            background-color: #1a1a2e;
+            color: white;
+            padding: 15px 0;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar img {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            padding: 10px;
+        }
+
+        .hero {
+            background-color: #1f2937;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-right: 70%;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-right: 70%;
+        }
+
+        .hero button {
+            background-color: #007BFF;
+            margin-right: 70%;
+        }
+
+        .hero img {
+            max-width: 50%;
+        }
+
+        .info {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+
+        .info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            border: 2px solid #007BFF;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 150px;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .quote {
+            background-color: #e8e8e8;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .quote h3 {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .quote p {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .CTA {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .CTA h4 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .CTA button {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <!-- ส่วน Header -->
-    <header class="header">
+    <nav class="navbar">
         <div class="container">
-            <h1 class="logo">Sports Hub</h1>
-            <nav class="nav">
-                <a href="#about">เกี่ยวกับเรา</a>
-                <a href="#features">กีฬา</a>
-                <a href="#contact">ติดต่อ</a>
-            </nav>
+            <img src="https://i.pinimg.com/736x/b1/dd/c5/b1ddc5053b2077e32250afb682163b5a.jpg" alt="โลโก้ชมรมหมากรุก">
+            <ul class="nav-links">
+                <li><a href="#">หน้าแรก</a></li>
+                <li><a href="#">กิจกรรม</a></li>
+                <li><a href="#">เกี่ยวกับเรา</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <!-- ส่วน Hero -->
     <section class="hero">
         <div class="container">
-            <h1 class="hero-title">สัมผัสความตื่นเต้นของกีฬา</h1>
-            <p class="hero-subtitle">เข้าร่วมกับชุมชนคนรักกีฬาและติดตามข่าวสารล่าสุดไปพร้อมกัน</p>
-            <a href="#signup" class="btn">สมัครสมาชิกเลย</a>
+            <img src="https://i.pinimg.com/736x/1e/a7/df/1ea7df500573250b677029ea445a9b44.jpg" alt="ภาพหมากรุก" align="right">
+            <h2>พร้อมจะฝึกฝนทักษะหมากรุกของคุณแล้วหรือยัง?</h2>
+            <p>เข้าร่วมชมรมของเราและเรียนรู้เทคนิคการเล่นหมากรุกจากผู้เชี่ยวชาญ</p>
+            <button>สมัครสมาชิก</button>
         </div>
     </section>
 
-    <!-- ส่วน Features -->
-    <section class="features" id="features">
-        <h2>เลือกกีฬาที่คุณชื่นชอบ</h2>
-        <div class="features-container">
-            <div class="feature">
-                <img src="https://images.vexels.com/media/users/3/229571/isolated/preview/f1424f6d3d551b4724e5c146dc099aeb-basketball-player-dribble-cut-out.png" alt="บาสเกตบอล">
-                <h3>บาสเกตบอล</h3>
-            </div>
-            <div class="feature">
-                <img src="https://t3.ftcdn.net/jpg/02/11/11/44/360_F_211114404_Etx3B5GYpJG9THGkLw22okquzxEYjA8o.jpg" alt="ฟุตบอล">
-                <h3>ฟุตบอล</h3>
-            </div>
-            <div class="feature">
-                <img src="https://png.pngtree.com/element_pic/00/16/08/2957c3ed12285d1.jpg" alt="เทนนิส">
-                <h3>เทนนิส</h3>
+    <section class="info">
+        <div class="container">
+            <h3>4 เคล็ดลับการเล่นหมากรุก</h3>
+            <div class="boxes">
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/1a/be/b4/1abeb4eb0a4567d5d3bcc7516ccefe1a.jpg" alt="วางแผนล่วงหน้า">
+                    <p>วางแผนล่วงหน้า</p>
+                </div>
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/ff/e2/2a/ffe22a3c2d8f94db42b4842d6b177845.jpg" alt="ป้องกันตัว">
+                    <p>เรียนรู้การป้องกันตัว</p>
+                </div>
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/60/d6/fb/60d6fb4f32e2a8a9e4e13e033a9da97f.jpg" alt="เสียสละหมาก">
+                    <p>อย่ากลัวการเสียสละ</p>
+                </div>
+                <div class="box">
+                    <img src="https://i.pinimg.com/736x/43/59/a9/4359a9e4afc7ddbd0b6d82b313ae35d9.jpg" alt="พัฒนาหมาก">
+                    <p>พัฒนาหมากให้เร็ว</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ส่วน Testimonials -->
-    <section class="testimonials">
-        <blockquote>
-            <p>"Sports Hub ช่วยให้ฉันติดตามแมตช์ที่ฉันชื่นชอบและสร้างแรงบันดาลใจให้ฉันมีสุขภาพดีและกระฉับกระเฉง"</p>
-            <cite>- อเล็กซ์ มอร์แกน, นักกีฬาอาชีพ</cite>
-        </blockquote>
+    <section class="quote">
+        <div class="container">
+            <h3>"หมากรุกไม่ใช่แค่เกม แต่มันคือศิลปะแห่งกลยุทธ์"</h3>
+            <p>ปรมาจารย์หมากรุก</p>
+        </div>
     </section>
 
-    <!-- ส่วน Call-to-Action -->
-    <section class="cta">
-        <h2>อย่าพลาดทุกความเคลื่อนไหว</h2>
-        <p>สมัครเพื่อรับข้อมูลอัปเดตล่าสุด คะแนน และการแจ้งเตือนกิจกรรม</p>
-        <a href="#signup" class="btn">เริ่มต้นเลย</a>
+    <section class="CTA">
+        <div class="container">
+            <h4>สนใจเรียนรู้เพิ่มเติมเกี่ยวกับเรา</h4>
+            <button>คลิกที่นี่</button>
+        </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <p>© Sports Hub 2025. สงวนลิขสิทธิ์</p>
+        <div class="container">
+            <p>สร้างด้วย นายวีราวัชร์ สุประดิษฐ์พงศ์</p>
+        </div>
     </footer>
 </body>
 </html>
